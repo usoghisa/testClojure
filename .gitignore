@@ -3,3 +3,29 @@ pom.xml
 /lib/
 /classes/
 .lein-deps-sum
+http://tryclj.com/
+Clojure encourages immutability and as little state as possible. 
+Therefore, instead of for loops mutating variables and such, most of 
+the time you'll see higher order functions doing transformations on 
+immutable data and returning new collections rather than ever 
+modifying the old one. 
+
+//math
+  (+ 2 2) // add 2 n
+//datatype
+	(type (/ 10 3))//clojure.lang.Ratio
+//declare func
+	(defn square [x] (* x x))
+	// OR
+	(def square (fn [x] (* x x)))
+// call func
+	(square 10)
+//anonimus func
+	(fn [x] (* x x))
+//call anonimus func
+	((fn [x] (* x x)) 10)
+//DATA STRUCTURE
+	Vectors: [1 2 3 4]//ordered collections
+	Maps: {:foo "bar" 3 4}//unordered collections indexed by keys 
+	Lists: '(1 2 3 4)
+	Sets: #{1 2 3 4}//are mathematical sets. 
